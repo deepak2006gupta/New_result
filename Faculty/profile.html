@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
     <title><h1>Faculty Profile</h1></title>
+    <link rel="stylesheet" href="style\profile.css">
 </head>
 <body>
-    <center>
-    <h1>Faculty Profile</h1>
-    <table>
+    
+    <h1 class="heading">Faculty Profile</h1>
+    <div class="card"> 
+        <table >
         <tr>
             <td>
-                <img src="media/faculty.jpg" alt="Faculty Image" width=200>
+                <img src="media/faculty.jpg" alt="Faculty Image" width=200 class="photo">
             </td>
             <td><p>Welcome to your Faculty Dashboard<br>Manage courses, view students, and<br>profile details here.</p></td>
         </tr>
+        <br>
         <tr>
-            <td>
-                <ul>
+            <td colspan="2">
+                <ul class="list">
                     <li><a href="View_course.html">View Courses</a></li><li><a href="View_student.html">View Students</a></li><li><a href="View_result.html">View Results</a></li>
                 </ul>
             </td>
         </tr>
     </table>
-    </center>
-    <hr>
-    <center>
+        <hr>
     <h2>Faculty Details</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Name</th><td>Anjali Mehta</td>
         </tr>
@@ -35,8 +36,6 @@
         <tr>
             <th>Department</th><td>Computer Science</td>
         </tr>
-    </table>
-    </center>
-</body>
-
+    </table></div>
+    </body>
 </html>

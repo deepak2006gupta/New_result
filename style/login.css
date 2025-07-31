@@ -1,0 +1,19 @@
+body{
+    background-color: #afc9f2;
+    align-items: center;
+    padding: 10%;
+    margin: 0;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: auto;
+    margin: auto;
+}
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #f80919;
+}
