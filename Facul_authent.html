@@ -4,31 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty Portal</title>
+    <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
-    <center>
-        <h1>Welcome Faculty</h1>
-        <table border="1">
-            <tr>
-                <td>
-                    <a href="Admin_authent.html">
-                        <img src="media/admin.jpeg" height="50"><br>
-                        <center>Admin</center>
-                    </a>
-                </td>
-                
-                <td>
-                    <img src="media/faculty.jpg" height="200"><br>
-                    <center>Faculty</center>
-                </td>
-                <td>
-                    <a href="Stud_authent.html">
-                        <img src="media/student.jpeg" height="50"><br>
-                        <center>Student</center>
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <h1>Welcome Faculty</h1>
+    <div class="container">
+    <div class="card">
+        <a href="Admin_authent.html">
+            <img src="media/admin.jpeg" height="100px" class="image"><br>
+            Admin
+        </a>
+    </div> 
+    <div class="card">
+        <img src="media/faculty.jpg" height="200px" class="image"><br>
+        Faculty
         <form action="Faculty/F_index.html" method="post">
             <h2>Faculty Login</h2>
             <label for="faculty-username">Username:</label>
@@ -42,6 +31,13 @@
 
             <button type="submit">Login</button>
         </form>
-    </center>
+        </div>
+        <div class="card">
+        <a href="Stud_authent.html">
+            <img src="media/student.jpeg" height="100px" class="image"><br>
+            Student
+        </a>
+    </div>
+    </div>
 </body>
 </html>

@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
-    <center>
-        <h1>Welcome Admin</h1>
-        <table border="1">
-            <tr>
-                <td><a href="Stud_authent.html"><img src="media/student.jpeg" height="50"><center>Student</center></a></td>
-                <td><img src="media/admin.jpeg" height="200"><center>Admin</center></td>
-                <td><a href="Facul_authent.html"><img src="media/faculty.jpg" height="50"><center>Faculty</center></a></td>
-            </tr>
-        </table>
-        <form action="Admin/A_index.html" method="post">
-        <h2>Admin Login</h2>
-        <label for="admin-username">Username:</label>
-        <input type="text" id="admin-username" name="username" required><br><br>
-        
-        <label for="admin-password">Password:</label>
-        <input type="password" id="admin-password" name="password" required><br><br>
-        
-        <label for="admin-code">Code:</label>
-        <input type="text" id="admin-code" name="code" required><br><br>
+    <h1>Welcome Admin</h1>
+    <div class="container">
+        <div class="card">
+            <a href="Stud_authent.html"><img src="media/student.jpeg" height="50" class="image"><br>
+                student
+            </a>
+        </div>
+        <div class="card">
+            <img src="media/admin.jpeg" height="200" class="image"><br>
+            Admin
+            <form action="Admin/A_index.html" method="post">
+                <h2>Admin Login</h2>
+                <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="username" required><br><br>
+            
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="password" required><br><br>
+            
+            <label for="admin-code">Code:</label>
+            <input type="text" id="admin-code" name="code" required><br><br>
 
-        <button type="submit">Login</button>
-        </form>
+            <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="card">
+            <a href="Facul_authent.html"><img src="media/faculty.jpg" height="50" class="image"><br>
+                Faculty
+            </a>
+        </div>
+    </div>
+        
     </centre>
 </body>
 </html>
