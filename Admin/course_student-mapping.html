@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course-Student Mapping</title>
+    <link rel="stylesheet" href="style/userreg.css">
 </head>
 <body>
-    
+    <h1>Course-Student Mapping</h1>
+    <div class="container">
+        <form id="mappingForm">
+            <div>
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required>
+            </div>
+
+            <div>
+                <label for="courseSelect">Select Course:</label>
+                <select id="courseSelect" name="course">
+                    <option value="">-- Select Course --</option>
+                    <!-- Course options populated dynamically -->
+                    <option value="CS101">Introduction to Programming</option>
+                    <option value="CS201">Data Structures</option>
+                    <option value="CS301">Database Systems</option>
+                </select>
+            </div>
+            <button type="submit" class="button1">Map Student(s) to Course</button>
+        </form>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Existing Mappings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Course Code</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="mappingTableBody">
+                    <!-- Mappings populated dynamically -->
+                    <tr>
+                        <td>1001</td>
+                        <td>John Doe</td>
+                        <td>CS101</td>
+                        <td>Introduction to Programming</td>
+                        <td><button class="button2">Unmap</button></td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Jane Smith</td>
+                        <td>CS201</td>
+                        <td>Data Structures</td>
+                        <td><button class="button2">Unmap</button></td>
+                    </tr>
+                    <tr>
+                        <td>1003</td>
+                        <td>Emily Johnson</td>
+                        <td>CS301</td>
+                        <td>Database Systems</td>
+                        <td><button class="button2">Unmap</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../assets/scripts.js"></script>
 </body>
 </html>

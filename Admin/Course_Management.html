@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Management</title>
+    <link rel="stylesheet" href="style/userreg.css">
 </head>
 <body>
-    
+    <h1>Course Management</h1>
+    <form id="courseForm">
+        <input type="hidden" id="courseId">
+        <label>
+            Course Name:
+            <input type="text" id="courseName" required>
+        </label>
+        <label>
+            Course Code:
+            <input type="text" id="courseCode" required>
+        </label>
+
+        <label>Course Coordinator:</label>
+        <input type="text" id="courseCoordinator" required>
+
+        <label>
+            Credits:
+            <input type="number" id="courseCredits" min="1" max="10" required>
+        </label>
+        <button type="submit" class="button1">Add Course</button>
+        <button type="button" id="resetBtn" class="button2">Reset</button>
+    </form>
+    <table id="coursesTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Name</th>
+                <th>Course Code</th>
+                <th>Credits</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Course rows will go here -->
+            <tr>
+                <td>1</td>
+                <td>Introduction to Programming</td>
+                <td>CS101</td>
+                <td>4</td>
+                <td><div class="button"><button class="button1">Edit</button><button class="button2">Delete</button></div></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Data Structures</td>
+                <td>CS201</td>
+                <td>3</td>
+                <td><div class="button"><button class="button1">Edit</button><button class="button2">Delete</button></div></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Database Systems</td>
+                <td>CS301</td>
+                <td>3</td>
+                <td><div class="button"><button class="button1">Edit</button><button class="button2">Delete</button></div></td>
+    </table>
 </body>
 </html>

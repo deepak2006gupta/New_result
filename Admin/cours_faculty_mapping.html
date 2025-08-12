@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course-Faculty Mapping</title>
+    <link rel="stylesheet" href="style/userreg.css">
 </head>
 <body>
-    
+    <h2>Course-Faculty Mapping</h2>
+    <div class="container">
+    <form id="mappingForm">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="math101">Math 101</option>
+            <option value="phy101">Physics 101</option>
+            <option value="cs101">Computer Science 101</option>
+            <!-- Add more courses as needed -->
+        </select>
+
+        <label for="faculty">Select Faculty:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="">--Select Faculty--</option>
+            <option value="john_doe">John Doe</option>
+            <option value="jane_smith">Jane Smith</option>
+            <option value="alice_jones">Alice Jones</option>
+            <!-- Add more faculty as needed -->
+        </select>
+
+        <button type="submit" class="button1">Map Faculty to Course</button>
+    </form>
+    </div>
+    <br>
+    <div class="container">
+    <h3>Mapped Course With Faculty</h3>
+    <table id="mappingTable">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Faculty</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+                <!-- Existing mappings will be populated here -->
+            <tr>
+                <td>Math 101</td>
+                <td>John Doe</td>
+                <td><button class="button2">Unmap</button></td>
+            </tr>
+            <tr>
+                <td>Physics 101</td>
+                <td>Jane Smith</td>
+                <td><button class="button2">Unmap</button></td>
+            </tr>
+            <tr>
+                <td>Computer Science 101</td>
+                <td>Alice Jones</td>
+                <td><button class="button2">Unmap</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
 </body>
 </html>

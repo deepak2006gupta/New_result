@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(to right, #cedcf4, #a1c1e2,#cedcf4);
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+    text-align: center;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: 1 1 250px;
+    padding: 20px;
+    background-color: #c7dcff;
+    border-radius: 20px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    color: #333;
+    font-weight: 450px;
+    margin-bottom: 15px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 1 1 250px;
+    justify-content: space-between;
+    gap: 15px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e1eff1;
+    box-shadow: 0 7px 3px rgba(10, 9, 9, 0.1);
+}
+.form-group label {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #090909;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.button1 {
+    background-color: #3d8740;
+    color: rgb(255, 255, 255);
+    padding: 3px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button1:hover {
+    background-color: #06e311;
+}
+.button2 {
+    background-color: #d9534f;
+    color: rgb(255, 255, 255);
+    padding: 3px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button2:hover {
+    background-color: #ff4d4d;
+}
+.user-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e1eff1;
+    border-radius: 20px;
+    box-shadow: 0 7px 3px rgba(10, 9, 9, 0.1);
+}
+
+table{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 7px 3px rgba(10, 9, 9, 0.1);
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input[type="text"]{
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}

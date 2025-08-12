@@ -1,7 +1,9 @@
 body{
-    margin: 0 ;
-    padding: 10%;
-    background: linear-gradient(to left, #047cf4, #f5f6f8);
+    background: linear-gradient(to right, #cedcf4, #a1c1e2,#cedcf4);
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+    text-align: center;
 }
 .heading{
     text-align: center;

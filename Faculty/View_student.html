@@ -2,10 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>View Student</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/result.css">
 </head>
 <body>
-    
+    <h1>View Student</h1>
+    <br>
+    <div class="container">
+    <div>
+        <label for="search">Search Student: </label>
+        <input type="text" id="search" placeholder="Enter name or ID">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Section</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row -->
+            <tr>
+                <td>2023001</td>
+                <td>Jane Doe</td>
+                <td>Computer Science</td>
+                <td>3</td>
+                <td>A</td>
+                <td>
+                    <button class="button1">View</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2023002</td>
+                <td>John Smith</td>
+                <td>Information Technology</td>
+                <td>2</td>
+                <td>B</td>
+                <td>
+                    <button class="button1">View</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2023003</td>
+                <td>Emily Johnson</td>
+                <td>Software Engineering</td>
+                <td>1</td>
+                <td>C</td>
+                <td>
+                    <button class="button1">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
 </body>
 </html>
